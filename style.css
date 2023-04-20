@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+#purpleBackground {
+    width: 33%;
+    height: 90%;
+    border-radius: 0 0 883px 0;
+    position: fixed;
+
+    background: #7200ff;
+    background: -moz-linear-gradient(45deg, #7200ff 0%, #e311ff 100%);
+    background: -webkit-linear-gradient(45deg, #7200ff 0%,#e311ff 100%);
+    background: linear-gradient(45deg, #7200ff 0%,#e311ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7200ff', endColorstr='#e311ff',GradientType=1 );
+}
+
+#phoneAndText {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#cellPhone {
+    width: 270px;
+    height: 530px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #938a8a;
+    margin-right: 100px; 
+    position: relative;
+}
+
+#topWhiteBox {
+    width: 130px;
+    height: 15px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    margin: 0 calc((270px - 30px - 130px)/2);
+}
+
+#phoneScreen {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 30px 30px 20px 20px;
+}
+
+#phoneHeader {
+    background: #7200ff;
+    background: -moz-linear-gradient(left,  #7200ff 1%, #e311ff 100%, #8d00a0 100%);
+    background: -webkit-linear-gradient(left,  #7200ff 1%,#e311ff 100%,#8d00a0 100%);
+    background: linear-gradient(to right,  #7200ff 1%,#e311ff 100%,#8d00a0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7200ff', endColorstr='#8d00a0',GradientType=1 );      
+    
+    border-radius: 20px 20px 5px 5px;
+    padding: 30px 15px 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#profileData {
+    display: flex;
+    align-items: center;
+}
+
+#headerArrow {
+    padding: 5px;
+    box-shadow: 2px -2px 0 1px white inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+}
+
+#headerCircle {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 1px;
+    margin: 0 15px 0 5px;
+}
+
+#headerCircle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#name h5, #name p {
+    margin: 0   ;
+}
+
+#name h5 {
+    color: rgb(236, 227, 227);
+}
+
+#name p {
+    font-size: 10px;
+    color: hsl(276, 100%, 81%);
+}
+
+#threeDots {
+    height: 10px;
+    border-right: 2px dotted white;
+}
+
+#chat {
+    width: 100%;
+    border-radius: 5px 5px 20px 20px;
+    padding: 10px 10px 0 10px;
+}
+
+#chat p:first-of-type {
+    margin-top: 0;
+}
+
+#chat img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#dogImages {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dogImages img:nth-of-type(2) {
+    margin: 0 5px;
+}
+
+.dogWalker, .customer {
+    box-shadow: 3px 3px 5px #938a8a;
+
+    max-width: 67%;
+    width: fit-content;
+
+    margin-bottom: 10px;
+    padding: 5px;
+
+    font-size: 10px;
+}
+
+.dogWalker {
+    background-color: rgb(223, 222, 222);
+    color: hsl(276, 55%, 52%);
+    margin-right: auto;
+    margin-left: 0;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.customer {
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 10px 10px 5px 10px;
+}
+
+.walkOption {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 3px 3px 5px #938a8a;
+    border-radius: 10px 10px 10px 5px;
+    background: #e311ff;
+    background: -moz-linear-gradient(left,  #e311ff 0%, #7200ff 100%);
+    background: -webkit-linear-gradient(left,  #e311ff 0%,#7200ff 100%);
+    background: linear-gradient(to right,  #e311ff 0%,#7200ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e311ff', endColorstr='#7200ff',GradientType=1 );
+}
+
+.optionDescription {
+    display: flex;
+    align-items: center;
+}
+
+.optionCircle {
+    background-color: transparent;
+    border: 2px solid hsl(276, 100%, 81%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 10px;
+}
+
+.optionDescription p  {
+    font-size: 10px;
+    margin: 0;
+    color: hsl(276, 100%, 81%);
+}
+
+.optionValue {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#typeMessage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+#typeMessage p {
+    margin: 0;
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+}
+
+#sendCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+#sendArrow {
+    width: 3px;
+    height: 3px;
+    padding: 4px;
+    box-shadow: 2px -2px 0 0px white inset;
+    border: solid transparent;
+    border-width: 0px 0 2px 2px;
+    transform: rotate(225deg);
+}
+
+#text {
+    width: 450px;
+    position: relative;
+}
+
+#text h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+}
+
+#text p {
+    color: hsl(271, 15%, 43%, 0.8);
+}
+
+@media (max-width: 800px) 
+{
+    #purpleBackground {
+        width: 50%;
+        height: 530px;
+        border-radius: 0 0 350px 0;
+        position: absolute;
+        left: 0%;
+    }
+
+    #phoneAndText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cellPhone {
+        margin: 30px 0 0 0;
+    }
+
+    #text {
+        width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #text h1 {
+        font-size: 39px;
+        margin: 50px 0 0 0;
+    }
+
+    #text p {
+        margin: 25px 0 30px 0;
+    }
+}
